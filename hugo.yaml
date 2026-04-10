@@ -1,5 +1,7 @@
 # Hugo configuration file
-title: My Site
+baseURL: "http://localhost:1313/"
+languageCode: "da-dk"
+title: "Jonas R. Outzen"
 
 # import hextra as module
 module:
@@ -7,40 +9,37 @@ module:
     - path: github.com/imfing/hextra
 
 markup:
-  # allow raw html
   goldmark:
     renderer:
       unsafe: true
 
-  # enable hextra syntax highlight
   highlight:
     noClasses: false
 
 menu:
   main:
+    - name: Projekter
+      pageRef: /projects
+      weight: 1
+
     - name: Docs
       pageRef: /docs
-      weight: 1
-    - name: About
-      pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+
+    - name: Om mig
+      pageRef: /about
       weight: 3
-    - name: Search
+
+    - name: GitHub ↗
+      url: "https://github.com/jonasoutzen"
       weight: 4
       params:
-        type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
-      params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
+
+    - name: Search
+      weight: 5
       params:
-        icon: x-twitter
+        type: search
 
 params:
   navbar:
@@ -48,9 +47,12 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
+
+  theme:
+    default: system
+    displayToggle: true
 
   editURL:
-    enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    enable: false
