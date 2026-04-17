@@ -1,0 +1,30 @@
+name: Sync Dify Knowledge
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "content/**"
+      - "scripts/sync-dify.mjs"
+      - ".github/workflows/sync-dify.yml"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync to Dify
+        env:
+          DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
+          DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+          DIFY_DATASET_ID: ${{ secrets.DIFY_DATASET_ID }}
+          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+        run: node scripts/sync-dify.mjs
