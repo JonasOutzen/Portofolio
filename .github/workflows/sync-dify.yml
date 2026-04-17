@@ -21,10 +21,19 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Debug secrets presence
+        run: |
+          echo "DIFY_BASE_URL set: ${{ secrets.DIFY_BASE_URL != '' }}"
+          echo "DIFY_API_KEY set: ${{ secrets.DIFY_API_KEY != '' }}"
+          echo "DIFY_DATASET_ID set: ${{ secrets.DIFY_DATASET_ID != '' }}"
+          echo "SITE_BASE_URL set: ${{ secrets.SITE_BASE_URL != '' }}"
+
       - name: Sync to Dify
         env:
           DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
           DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
           DIFY_DATASET_ID: ${{ secrets.DIFY_DATASET_ID }}
           SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
-        run: node scripts/sync-dify.mjs
+        run: |
+          node --version
+          node scripts/sync-dify.mjs
