@@ -44,6 +44,14 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build knowledge.json
+        run: node scripts/build-knowledge.mjs
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -86,3 +94,11 @@ jobs:
           DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
           SITE_BASE_URL: https://jonasoutzen.github.io/Portofolio/
         run: node scripts/sync-dify.mjs
+
+              - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build knowledge.json
+        run: node scripts/build-knowledge.mjs
