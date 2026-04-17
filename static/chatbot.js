@@ -1,5 +1,5 @@
 (() => {
-  const apiUrl = "https://YOUR-WORKER-URL.workers.dev";
+const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
 
   function createChatbot() {
     const root = document.createElement("div");
