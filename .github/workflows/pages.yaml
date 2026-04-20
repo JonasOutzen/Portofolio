@@ -33,7 +33,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: "1.26"
+          go-version: "1.23"
 
       - name: Setup Pages
         id: pages
@@ -76,29 +76,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  sync-dify:
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Sync site to Dify
-        env:
-          DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
-          SITE_BASE_URL: https://jonasoutzen.github.io/Portofolio/
-        run: node scripts/sync-dify.mjs
-
-              - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Build knowledge.json
-        run: node scripts/build-knowledge.mjs
