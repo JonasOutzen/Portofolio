@@ -52,6 +52,12 @@ jobs:
       - name: Build knowledge.json
         run: node scripts/build-knowledge.mjs
 
+      - name: Inject OpenAI key into chatbot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          sed -i "s|__OPENAI_API_KEY__|${OPENAI_API_KEY}|g" static/chatbot.js
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production

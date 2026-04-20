@@ -1,5 +1,6 @@
 (() => {
-const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
+  const OPENAI_API_KEY = "__OPENAI_API_KEY__";
+  const KNOWLEDGE_URL = "/Portofolio/knowledge.json";
 
   function createChatbot() {
     const root = document.createElement("div");
@@ -37,7 +38,6 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         z-index: 99999;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
-
       #jonas-chatbot-toggle {
         border: none;
         border-radius: 999px;
@@ -48,7 +48,6 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         background: #111;
         color: #fff;
       }
-
       #jonas-chatbot-panel {
         width: 340px;
         height: 460px;
@@ -61,7 +60,6 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         display: flex;
         flex-direction: column;
       }
-
       #jonas-chatbot-header {
         display: flex;
         align-items: center;
@@ -69,7 +67,6 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         padding: 12px 14px;
         border-bottom: 1px solid #e5e7eb;
       }
-
       #jonas-chatbot-close {
         border: none;
         background: transparent;
@@ -78,14 +75,12 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         cursor: pointer;
         color: #444;
       }
-
       #jonas-chatbot-messages {
         flex: 1;
         overflow-y: auto;
         padding: 12px;
         background: #fafafa;
       }
-
       .jonas-chatbot-msg {
         max-width: 85%;
         margin-bottom: 10px;
@@ -96,20 +91,17 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         font-size: 14px;
         line-height: 1.4;
       }
-
       .jonas-chatbot-msg.user {
         margin-left: auto;
         background: #111;
         color: #fff;
       }
-
       .jonas-chatbot-msg.bot {
         margin-right: auto;
         background: #fff;
         color: #111;
         border: 1px solid #e5e7eb;
       }
-
       #jonas-chatbot-form {
         display: flex;
         gap: 8px;
@@ -117,7 +109,6 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         border-top: 1px solid #e5e7eb;
         background: #fff;
       }
-
       #jonas-chatbot-input {
         flex: 1;
         min-width: 0;
@@ -127,7 +118,6 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         font-size: 14px;
         outline: none;
       }
-
       #jonas-chatbot-form button[type="submit"] {
         border: none;
         border-radius: 10px;
@@ -136,22 +126,10 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
         background: #111;
         color: #fff;
       }
-
       @media (max-width: 480px) {
-        #jonas-chatbot-root {
-          right: 12px;
-          bottom: 12px;
-          left: 12px;
-        }
-
-        #jonas-chatbot-panel {
-          width: 100%;
-          height: 70vh;
-        }
-
-        #jonas-chatbot-toggle {
-          width: 100%;
-        }
+        #jonas-chatbot-root { right: 12px; bottom: 12px; left: 12px; }
+        #jonas-chatbot-panel { width: 100%; height: 70vh; }
+        #jonas-chatbot-toggle { width: 100%; }
       }
     `;
 
@@ -165,12 +143,22 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
     const input = document.getElementById("jonas-chatbot-input");
     const messages = document.getElementById("jonas-chatbot-messages");
 
+    let knowledge = null;
+
+    async function loadKnowledge() {
+      if (knowledge) return knowledge;
+      const res = await fetch(KNOWLEDGE_URL);
+      knowledge = await res.json();
+      return knowledge;
+    }
+
     function addMessage(text, role) {
       const el = document.createElement("div");
       el.className = `jonas-chatbot-msg ${role}`;
       el.textContent = text;
       messages.appendChild(el);
       messages.scrollTop = messages.scrollHeight;
+      return el;
     }
 
     function setOpen(isOpen) {
@@ -189,34 +177,48 @@ const apiUrl = "https://jonas-portfolio-chat.jonasoutzen.workers.dev";
       addMessage(message, "user");
       input.value = "";
 
-      const thinkingEl = document.createElement("div");
-      thinkingEl.className = "jonas-chatbot-msg bot";
-      thinkingEl.textContent = "Thinking...";
-      messages.appendChild(thinkingEl);
-      messages.scrollTop = messages.scrollHeight;
+      const thinkingEl = addMessage("Thinking...", "bot");
 
       try {
-        const res = await fetch(apiUrl, {
+        const kb = await loadKnowledge();
+        const context = kb.docs
+          .map(doc => `TITLE: ${doc.title}\nURL: ${doc.url}\nCONTENT:\n${doc.content}`)
+          .join("\n\n---\n\n")
+          .slice(0, 80000);
+
+        const res = await fetch("https://api.openai.com/v1/chat/completions", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "Authorization": `Bearer ${OPENAI_API_KEY}`,
           },
-          body: JSON.stringify({ message }),
+          body: JSON.stringify({
+            model: "gpt-4o-mini",
+            messages: [
+              {
+                role: "system",
+                content:
+                  "You are a helpful assistant for Jonas Outzen's portfolio. " +
+                  "Answer only based on the provided knowledge. " +
+                  "If something isn't mentioned, say you don't have that info. " +
+                  "Be concise and friendly. Answer in the same language the user writes in.",
+              },
+              {
+                role: "user",
+                content: `Website knowledge:\n\n${context}\n\nQuestion: ${message}`,
+              },
+            ],
+          }),
         });
 
         const data = await res.json();
         thinkingEl.remove();
 
-        if (!res.ok) {
-          addMessage("Sorry, the chat service hit an error.", "bot");
-          console.error(data);
-          return;
-        }
-
-        addMessage(data.answer || "Sorry, I couldn't generate a response.", "bot");
+        const answer = data.choices?.[0]?.message?.content;
+        addMessage(answer || "I couldn't generate a response.", "bot");
       } catch (err) {
         thinkingEl.remove();
-        addMessage("Sorry, the chat service is unavailable right now.", "bot");
+        addMessage("Sorry, something went wrong.", "bot");
         console.error(err);
       }
     });
