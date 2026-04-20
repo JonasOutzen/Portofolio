@@ -17,7 +17,7 @@ jobs:
           node-version: 20
 
       - name: Build knowledge.json
-        run: node scripts/build-knowledge.js
+        run: node scripts/build-knowledge.mjs
 
       - name: Commit knowledge.json
         run: |
