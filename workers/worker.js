@@ -75,9 +75,7 @@ export default {
         return json({ error: data }, 500);
       }
 
-      const answer =
-        data.output_text ||
-        "I couldn't generate a response.";
+      const answer = data.output?.[0]?.content?.[0]?.text || "I couldn't generate a response.";
 
       return json({ answer });
     } catch (err) {

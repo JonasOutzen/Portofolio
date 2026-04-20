@@ -1,0 +1,62 @@
+name: Sync portfolio to Dify knowledge base
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect markdown content
+        run: |
+          find content/ -name "*.md" | sort | xargs cat > all_content.txt
+          echo "Collected $(wc -c < all_content.txt) bytes of content"
+
+      - name: Delete existing documents from Dify dataset
+        env:
+          DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+          DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
+          DIFY_DATASET_ID: ${{ secrets.DIFY_DATASET_ID }}
+        run: |
+          # Get all document IDs
+          DOCS=$(curl -s \
+            "${DIFY_BASE_URL}/v1/datasets/${DIFY_DATASET_ID}/documents?limit=100" \
+            -H "Authorization: Bearer ${DIFY_API_KEY}")
+
+          echo "Current documents: $DOCS"
+
+          # Extract IDs and delete each one
+          echo "$DOCS" | jq -r '.data[].id' | while read DOC_ID; do
+            echo "Deleting document $DOC_ID..."
+            curl -s -X DELETE \
+              "${DIFY_BASE_URL}/v1/datasets/${DIFY_DATASET_ID}/documents/${DOC_ID}" \
+              -H "Authorization: Bearer ${DIFY_API_KEY}"
+          done
+
+      - name: Upload fresh content to Dify
+        env:
+          DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+          DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
+          DIFY_DATASET_ID: ${{ secrets.DIFY_DATASET_ID }}
+          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+        run: |
+          CONTENT=$(cat all_content.txt)
+          DATE=$(date +%Y-%m-%d)
+
+          curl -s -X POST \
+            "${DIFY_BASE_URL}/v1/datasets/${DIFY_DATASET_ID}/document/create-by-text" \
+            -H "Authorization: Bearer ${DIFY_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"name\": \"portfolio-${DATE}\",
+              \"text\": $(jq -Rs . <<< \"$CONTENT\"),
+              \"indexing_technique\": \"high_quality\",
+              \"process_rule\": { \"mode\": \"automatic\" }
+            }"
+          
+          echo "Upload complete!"
