@@ -4,47 +4,42 @@ toc: true
 weight: 1
 ---
 
-
-This project was developed as part of our **3rd semester frontend exam**, focusing on modern React development and fast development workflows.
+Dette projekt blev udviklet som en del af vores **3. semesters frontend-eksamen** med fokus på moderne React-udvikling og hurtige udviklingsworkflows.
 
 ## GitHub
 
-(Add your repo link here if you have one)
+(Tilføj repo-link her hvis du har et)
 
-## Project overview
+## Projektbeskrivelse
 
-This project is built using **React and Vite**, providing a fast and modern development environment with Hot Module Replacement (HMR) and optimized build performance.
+Projektet er bygget med **React og Vite**, som giver et hurtigt og moderne udviklingsmiljø med Hot Module Replacement (HMR) og optimeret build-performance.
 
-The goal of the project was to create a responsive and efficient frontend application using modern tools and best practices.
+Målet var at skabe en responsiv og effektiv frontend-applikation ved hjælp af moderne værktøjer og best practices.
 
-## Developed by
+## Udviklet af
 
-- Jonas Outzen  
-- Asger Høffner  
+- Jonas Outzen
+- Asger Høffner
 
-## Key features
+## Centrale funktioner
 
-- Fast development with Vite and HMR
-- Component-based architecture using React
-- Clean and structured project setup
-- ESLint configuration for code quality
-- Optimized build process
+- Hurtig udvikling med Vite og HMR
+- Komponentbaseret arkitektur med React
+- Struktureret og overskuelig projektopsætning
+- ESLint-konfiguration til kodekvalitet
+- Optimeret build-proces
 
-## Technologies used
+## Tech stack
 
 - React
 - Vite
 - JavaScript (ES6+)
 - ESLint
 
-## What I worked on
+## Hvad jeg arbejdede med
 
-In this project, I focused on building reusable React components and structuring the application in a scalable way.  
+I dette projekt fokuserede jeg på at bygge genanvendelige React-komponenter og strukturere applikationen på en skalerbar måde.
 
-We worked with modern frontend workflows, including fast refresh, modular code organization, and maintaining clean and readable code through linting.
+Vi arbejdede med moderne frontend-workflows, herunder fast refresh, modulær kodeorganisering og vedligeholdelse af ren og læsbar kode via linting.
 
-The project gave practical experience with how modern frontend tools improve both developer experience and performance.
-
-## Notes
-
-The project is based on a minimal Vite + React setup, which can be extended further with tools like TypeScript and more advanced configurations depending on project requirements.
+Projektet gav praktisk erfaring med, hvordan moderne frontend-værktøjer forbedrer både udviklingsoplevelsen og ydeevnen.

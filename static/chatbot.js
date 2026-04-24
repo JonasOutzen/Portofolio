@@ -6,12 +6,12 @@
     const root = document.createElement("div");
     root.id = "jonas-chatbot-root";
     root.innerHTML = `
-      <button id="jonas-chatbot-toggle" aria-label="Open chat">Chat</button>
+      <button id="jonas-chatbot-toggle" aria-label="Åbn chat">Chat</button>
       <div id="jonas-chatbot-panel" hidden>
         <div id="jonas-chatbot-header">
           <strong>Jonas Bot</strong>
           <div style="display:flex;gap:6px;align-items:center;">
-            <button id="jonas-chatbot-clear" aria-label="Clear chat" title="Ryd chat">
+            <button id="jonas-chatbot-clear" aria-label="Ryd chat" title="Ryd chat">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
             </button>
             <button id="jonas-chatbot-close" aria-label="Close chat">×</button>
@@ -19,17 +19,18 @@
         </div>
         <div id="jonas-chatbot-messages">
           <div class="jonas-chatbot-msg bot">
-            Hi — ask me about Jonas, his projects, or this site.
+            Hej — spørg mig om Jonas, hans projekter eller denne side.
           </div>
         </div>
         <form id="jonas-chatbot-form">
           <input
             id="jonas-chatbot-input"
             type="text"
-            placeholder="Ask something..."
+            placeholder="Stil et spørgsmål..."
             autocomplete="off"
           />
           <button type="submit">Send</button>
+
         </form>
       </div>
     `;
@@ -261,7 +262,7 @@
 
     function clearChat() {
       sessionStorage.removeItem(STORAGE_KEY);
-      messages.innerHTML = `<div class="jonas-chatbot-msg bot">Hi — ask me about Jonas, his projects, or this site.</div>`;
+      messages.innerHTML = `<div class="jonas-chatbot-msg bot">Hej — spørg mig om Jonas, hans projekter eller denne side.</div>`;
     }
 
     toggle.addEventListener("click", () => setOpen(panel.hidden));
@@ -276,7 +277,7 @@
       addMessage(message, "user");
       input.value = "";
 
-      const thinkingEl = addMessage("Thinking...", "bot", false);
+      const thinkingEl = addMessage("Tænker...", "bot", false);
 
       try {
         const kb = await loadKnowledge();
@@ -301,7 +302,7 @@
                   "You are a helpful assistant for Jonas Outzen's portfolio. " +
                   "Answer only based on the provided knowledge. " +
                   "If something isn't mentioned, say you don't have that info. " +
-                  "Be concise and friendly. Answer in the same language the user writes in. " +
+                  "Vær kortfattet og venlig. Svar på dansk medmindre brugeren skriver på et andet sprog. " +
                   "You may use simple markdown: **bold**, *italic*, and bullet lists with -. " +
                   "Always respond with valid JSON in this exact format: " +
                   '{"answer": "your answer here", "sources": [{"title": "Page title", "url": "/page-url"}]} ' +
@@ -328,10 +329,10 @@
           answer = raw;
           sources = [];
         }
-        addBotMessage(answer || "I couldn't generate a response.", sources);
+        addBotMessage(answer || "Jeg kunne ikke generere et svar.", sources);
       } catch (err) {
         thinkingEl.remove();
-        addMessage("Sorry, something went wrong.", "bot");
+        addMessage("Beklager, noget gik galt.", "bot");
         console.error(err);
       }
     });

@@ -4,32 +4,32 @@ toc: true
 weight: 3
 ---
 
-A meditation quiz web app built with AI assistance, focused on teaching users how to meditate through an interactive quiz format.
+En meditationsquiz bygget med AI-assistance, med fokus på at lære brugerne at meditere gennem et interaktivt quizformat.
 
 ## Live site
 
 [jonasoutzen.github.io/meditation-ai-project](https://jonasoutzen.github.io/meditation-ai-project/)
 
-## Project overview
+## Projektbeskrivelse
 
-This project is a quiz-based web application about meditation and mindfulness. The goal was to create an engaging and calming experience that helps users learn how to meditate through guided questions and answers.
+Dette projekt er en quiz-baseret webapplikation om meditation og mindfulness. Målet var at skabe en engagerende og rolig oplevelse, der hjælper brugerne med at lære at meditere gennem guidede spørgsmål og svar.
 
-The entire application was coded with the help of Claude AI, exploring how AI-assisted development can speed up the process of building complete frontend projects.
+Hele applikationen blev kodet med hjælp fra Claude AI, som et eksperiment i AI-assisteret udvikling.
 
-## Features
+## Funktioner
 
-- Interactive quiz format focused on meditation techniques
-- Calming coffee and cream colour scheme for a relaxed aesthetic
-- Responsive UI built with React
-- Clean component structure and smooth user experience
+- Interaktivt quizformat med fokus på meditationsteknikker
+- Rolig kaffe- og cremefarvet farvepalet
+- Responsivt UI bygget med React
+- Ren komponentstruktur og god brugeroplevelse
 
 ## Tech stack
 
 - React
 - JavaScript (ES6+)
-- CSS (custom coffee & cream theme)
+- CSS (tilpasset kaffe & creme-tema)
 - GitHub Pages (deployment)
 
-## What I worked on
+## Hvad jeg arbejdede med
 
-This project was an experiment in AI-assisted development. I used Claude AI to help build the full application — from component structure to styling — while focusing on the user experience and visual design. It gave practical insight into how AI tools can be used as a development partner rather than just a code autocomplete.
+Dette projekt var et eksperiment i AI-assisteret udvikling. Jeg brugte Claude AI til at hjælpe med at bygge hele applikationen — fra komponentstruktur til styling — med fokus på brugeroplevelsen og det visuelle design. Det gav praktisk indsigt i, hvordan AI-værktøjer kan bruges som en udviklingspartner frem for blot en kodeautofuldførelse.

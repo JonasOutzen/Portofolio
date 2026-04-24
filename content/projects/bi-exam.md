@@ -4,44 +4,44 @@ toc: true
 weight: 4
 ---
 
-A Business Intelligence exam project investigating how match conditions and in-game statistics influence football match outcomes using statistical analysis and machine learning.
+Et Business Intelligence-eksamensprojekt, der undersøger hvordan kampforhold og statistik påvirker resultatet af fodboldkampe ved hjælp af statistisk analyse og machine learning.
 
 ## GitHub
 
-[View the repository](https://github.com/JonasOutzen/BI-exam)
+[Se repositoriet](https://github.com/JonasOutzen/BI-exam)
 
-## Project overview
+## Projektbeskrivelse
 
-This project examines whether match statistics and environmental conditions correlate with winning football matches or scoring goals. Using BI techniques and machine learning, we explore patterns in structured match data to test a series of hypotheses around weather, possession, passing accuracy, discipline, and home advantage.
+Projektet undersøger, om kampstatistik og miljømæssige forhold korrelerer med at vinde fodboldkampe eller score mål. Ved hjælp af BI-teknikker og machine learning udforsker vi mønstre i strukturerede kampdata for at teste en række hypoteser om vejr, bold besiddelse, afleveringsnøjagtighed, disciplin og hjemmebanefordel.
 
-The project follows the full BI workflow: problem formulation, data preparation, modelling, and presentation of results.
+Projektet følger det fulde BI-workflow: problemformulering, dataforberedelse, modellering og præsentation af resultater.
 
-## Research questions
+## Forskningsspørgsmål
 
-- Does weather affect how football matches are played?
-- Which match statistics are most strongly correlated with winning?
-- Does home advantage significantly impact match outcomes?
-- Are disciplinary actions (cards and fouls) related to match results?
+- Påvirker vejret, hvordan fodboldkampe spilles?
+- Hvilke kampstatistikker korrelerer stærkest med at vinde?
+- Har hjemmebanefordel en markant indvirkning på kampresultater?
+- Er disciplinære handlinger (kort og frispark) relateret til kampresultater?
 
-## Hypotheses tested
+## Testede hypoteser
 
-- More goals and cards are given in rainy matches compared to dry conditions
-- Higher passing accuracy and possession lead to more goals and wins
-- Teams win more at home and receive fewer fouls
-- Corner kicks, free kicks, and cards correlate with match outcomes
+- Der scores flere mål og gives flere kort i kampe i regnvejr sammenlignet med tørt vejr
+- Højere afleveringsnøjagtighed og boldbesiddelse fører til flere mål og sejre
+- Hold vinder flere kampe hjemme og modtager færre frispark
+- Hjørnespark, frispark og kort korrelerer med kampresultater
 
 ## Data
 
-The dataset includes per-match statistics such as goals, possession, passing accuracy, fouls, yellow/red cards, penalties, corner kicks, and shots on target, plus optional weather data.
+Datasættet indeholder per-kamp-statistik såsom mål, boldbesiddelse, afleveringsnøjagtighed, frispark, gule/røde kort, straffespark, hjørnespark, skud på mål samt valgfri vejrdata.
 
-## Machine learning models
+## Machine learning modeller
 
 - Logistic Regression
 - Decision Trees
 - Random Forest
-- Classification models predicting match outcomes
+- Klassifikationsmodeller til forudsigelse af kampresultater
 
-Models were evaluated using accuracy, precision, recall, and confusion matrices.
+Modeller blev evalueret med accuracy, precision, recall og confusion matrices.
 
 ## Tech stack
 
