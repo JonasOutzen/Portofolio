@@ -1,9 +1,9 @@
 ---
-title: "Gang 6 – Model Context Protocol (MCP)"
+title: "Uge 6 – Model Context Protocol (MCP)"
 weight: 6
 ---
 
-**Gang:** 6 (27/4)
+**Uge:** 6 (27/4)
 
 **Tema:** Model Context Protocol (MCP)
 

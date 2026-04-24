@@ -1,9 +1,9 @@
 ---
-title: "Gang 8 – Virksomhedsoplæg"
+title: "Uge 8 – Virksomhedsoplæg"
 weight: 8
 ---
 
-**Gang:** 8 (4/5)
+**Uge:** 8 (4/5)
 
 **Tema:** Virksomhedsoplæg
 

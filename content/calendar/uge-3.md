@@ -1,9 +1,9 @@
 ---
-title: "Gang 3 – RAG demo og gennemgang"
+title: "Uge 3 – RAG demo og gennemgang"
 weight: 3
 ---
 
-**Gang:** 3 (17/4)
+**Uge:** 3 (17/4)
 
 **Tema:** Vi bygger og tester RAG-løsninger
 

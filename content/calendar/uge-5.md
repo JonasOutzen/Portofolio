@@ -1,9 +1,9 @@
 ---
-title: "Gang 5 – LLM API-integration"
+title: "Uge 5 – LLM API-integration"
 weight: 5
 ---
 
-**Gang:** 5 (24/4)
+**Uge:** 5 (24/4)
 
 **Tema:** LLM API-integration
 

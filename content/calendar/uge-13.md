@@ -1,9 +1,9 @@
 ---
-title: "Gang 13 – Eksamensforberedelse"
+title: "Uge 13 – Eksamensforberedelse"
 weight: 13
 ---
 
-**Gang:** 13 (29/5)
+**Uge:** 13 (29/5)
 
 **Tema:** Eksamensforberedelse
 

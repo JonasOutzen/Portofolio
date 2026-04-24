@@ -1,9 +1,9 @@
 ---
-title: "Gang 12 – Projektdemo og refleksion"
+title: "Uge 12 – Projektdemo og refleksion"
 weight: 12
 ---
 
-**Gang:** 12 (26/5)
+**Uge:** 12 (26/5)
 
 **Tema:** Projektdemo og refleksion
 

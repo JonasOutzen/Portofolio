@@ -1,9 +1,9 @@
 ---
-title: "Gang 11 – Projektarbejde + code review"
+title: "Uge 11 – Projektarbejde + code review"
 weight: 11
 ---
 
-**Gang:** 11 (22/5)
+**Uge:** 11 (22/5)
 
 **Tema:** Projektarbejde + code review
 

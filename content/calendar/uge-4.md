@@ -1,9 +1,9 @@
 ---
-title: "Gang 4 – Kodeagenter i softwareudvikling"
+title: "Uge 4 – Kodeagenter i softwareudvikling"
 weight: 4
 ---
 
-**Gang:** 4 (20/4)
+**Uge:** 4 (20/4)
 
 **Tema:** Kodeagenter i softwareudvikling
 

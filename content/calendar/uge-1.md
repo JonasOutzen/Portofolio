@@ -1,9 +1,9 @@
 ---
-title: "Gang 1 – Kursusintro + Portfolio"
+title: "Uge 1 – Kursusintro + Portfolio"
 weight: 1
 ---
 
-**Gang:** 1 (10/4)
+**Uge:** 1 (10/4)
 
 **Tema:** Kursusintro + Portfolio
 

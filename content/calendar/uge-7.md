@@ -1,9 +1,9 @@
 ---
-title: "Gang 7 – Spec Driven Development & Juridiske/etiske overvejelser"
+title: "Uge 7 – Spec Driven Development & Juridiske/etiske overvejelser"
 weight: 7
 ---
 
-**Gang:** 7 (1/5)
+**Uge:** 7 (1/5)
 
 **Tema:** Spec Driven Development & Juridiske/etiske overvejelser
 

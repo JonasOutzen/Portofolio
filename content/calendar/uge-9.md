@@ -1,13 +1,13 @@
 ---
-title: "Gang 9 – Projektstart"
+title: "Uge 9 – Projektstart"
 weight: 9
 ---
 
-**Gang:** 9 (11/5)
+**Uge:** 9 (11/5)
 
 **Tema:** Projektstart
 
-**Indhold:** Projektteams dannes og udviklingen af en AI-drevet applikation begynder – enten baseret på virksomhedscasen fra Gang 8 eller en selvvalgt idé.
+**Indhold:** Projektteams dannes og udviklingen af en AI-drevet applikation begynder – enten baseret på virksomhedscasen fra Uge 8 eller en selvvalgt idé.
 
 ## Hvad vi gjorde
 

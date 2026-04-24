@@ -1,9 +1,9 @@
 ---
-title: "Gang 2 – Retrieval Augmented Generation (RAG)"
+title: "Uge 2 – Retrieval Augmented Generation (RAG)"
 weight: 2
 ---
 
-**Gang:** 2 (13/4)
+**Uge:** 2 (13/4)
 
 **Tema:** Retrieval Augmented Generation (RAG)
 

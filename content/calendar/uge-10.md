@@ -1,9 +1,9 @@
 ---
-title: "Gang 10 – Projektarbejde + teknisk sparring"
+title: "Uge 10 – Projektarbejde + teknisk sparring"
 weight: 10
 ---
 
-**Gang:** 10 (18/5)
+**Uge:** 10 (18/5)
 
 **Tema:** Projektarbejde + teknisk sparring
 
@@ -11,7 +11,7 @@ weight: 10
 
 ## Hvad vi gjorde
 
-Gangene startede med en fælles gennemgang af de udfordringer, projektgrupperne stødte på. Vi delte erfaringer om:
+Ugerne startede med en fælles gennemgang af de udfordringer, projektgrupperne stødte på. Vi delte erfaringer om:
 - Arkitekturvalg og systemdesign
 - Dataflow og integration mellem komponenter
 - Brug af AI-værktøjer (kodeagenter, LLM-API, RAG) i praksis
