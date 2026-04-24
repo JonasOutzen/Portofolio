@@ -91,6 +91,26 @@
         align-items: center;
       }
       #jonas-chatbot-clear:hover { color: #e11d48; background: #fff1f2; }
+      .jonas-chatbot-sources {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #e5e7eb;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .jonas-chatbot-source-link {
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 999px;
+        background: #f3f4f6;
+        color: #374151;
+        text-decoration: none;
+        border: 1px solid #e5e7eb;
+      }
+      .jonas-chatbot-source-link:hover {
+        background: #e5e7eb;
+      }
       #jonas-chatbot-messages {
         flex: 1;
         overflow-y: auto;
@@ -212,6 +232,26 @@
       return el;
     }
 
+    function addBotMessage(answer, sources, persist = true) {
+      const el = document.createElement("div");
+      el.className = "jonas-chatbot-msg bot";
+      let html = renderMarkdown(answer);
+      if (sources && sources.length > 0) {
+        html += `<div class="jonas-chatbot-sources">`;
+        sources.forEach(s => {
+          const base = "https://jonasoutzen.github.io";
+          const href = s.url.startsWith("http") ? s.url : base + s.url;
+          html += `<a href="${href}" target="_blank" class="jonas-chatbot-source-link">${s.title}</a>`;
+        });
+        html += `</div>`;
+      }
+      el.innerHTML = html;
+      messages.appendChild(el);
+      messages.scrollTop = messages.scrollHeight;
+      if (persist) saveHistory();
+      return el;
+    }
+
     function setOpen(isOpen) {
       panel.hidden = !isOpen;
       if (isOpen) input.focus();
@@ -261,7 +301,10 @@
                   "Answer only based on the provided knowledge. " +
                   "If something isn't mentioned, say you don't have that info. " +
                   "Be concise and friendly. Answer in the same language the user writes in. " +
-                  "You may use simple markdown: **bold**, *italic*, and bullet lists with -.",
+                  "You may use simple markdown: **bold**, *italic*, and bullet lists with -. " +
+                  "Always respond with valid JSON in this exact format: " +
+                  '{"answer": "your answer here", "sources": [{"title": "Page title", "url": "/page-url"}]} ' +
+                  "Only include sources that are directly relevant. Max 3 sources.",
               },
               {
                 role: "user",
@@ -274,8 +317,17 @@
         const data = await res.json();
         thinkingEl.remove();
 
-        const answer = data.choices?.[0]?.message?.content;
-        addMessage(answer || "I couldn't generate a response.", "bot");
+        const raw = data.choices?.[0]?.message?.content || "{}";
+        let answer, sources;
+        try {
+          const parsed = JSON.parse(raw);
+          answer = parsed.answer;
+          sources = parsed.sources || [];
+        } catch {
+          answer = raw;
+          sources = [];
+        }
+        addBotMessage(answer || "I couldn't generate a response.", sources);
       } catch (err) {
         thinkingEl.remove();
         addMessage("Sorry, something went wrong.", "bot");
