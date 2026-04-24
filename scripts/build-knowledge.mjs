@@ -15,6 +15,11 @@ async function walk(dir) {
   return files.flat();
 }
 
+function extractTitle(content) {
+  const match = content.match(/^---[\s\S]*?\ntitle:\s*["']?([^"'\n]+)["']?\n[\s\S]*?---/m);
+  return match ? match[1].trim() : null;
+}
+
 function stripFrontMatter(content) {
   return content.replace(/^---[\s\S]*?---\s*/m, "");
 }
@@ -48,14 +53,16 @@ async function main() {
   for (const file of files) {
     const rel = path.relative(process.cwd(), file).replace(/\\/g, "/");
     const raw = await fs.readFile(file, "utf8");
+    const frontmatterTitle = extractTitle(raw);
     const text = clean(stripShortcodes(stripFrontMatter(raw)));
 
     if (!text) continue;
 
+    const fallbackTitle = path.basename(rel, ".md").replace(/^_index$/, "home");
     docs.push({
       path: rel,
       url: relToUrl(rel),
-      title: path.basename(rel, ".md").replace(/^_index$/, "home"),
+      title: frontmatterTitle || fallbackTitle,
       content: text,
     });
   }

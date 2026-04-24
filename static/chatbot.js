@@ -144,6 +144,7 @@
     const messages = document.getElementById("jonas-chatbot-messages");
 
     let knowledge = null;
+    const STORAGE_KEY = "jonas-chatbot-history";
 
     async function loadKnowledge() {
       if (knowledge) return knowledge;
@@ -152,12 +153,36 @@
       return knowledge;
     }
 
-    function addMessage(text, role) {
+    function saveHistory() {
+      const msgs = [...messages.querySelectorAll(".jonas-chatbot-msg")].map(el => ({
+        role: el.classList.contains("user") ? "user" : "bot",
+        text: el.textContent,
+      }));
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(msgs));
+    }
+
+    function restoreHistory() {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "[]");
+        // Remove the default greeting if we have saved history
+        if (saved.length > 0) messages.innerHTML = "";
+        saved.forEach(({ role, text }) => {
+          const el = document.createElement("div");
+          el.className = `jonas-chatbot-msg ${role}`;
+          el.textContent = text;
+          messages.appendChild(el);
+        });
+        messages.scrollTop = messages.scrollHeight;
+      } catch {}
+    }
+
+    function addMessage(text, role, persist = true) {
       const el = document.createElement("div");
       el.className = `jonas-chatbot-msg ${role}`;
       el.textContent = text;
       messages.appendChild(el);
       messages.scrollTop = messages.scrollHeight;
+      if (persist) saveHistory();
       return el;
     }
 
@@ -165,6 +190,8 @@
       panel.hidden = !isOpen;
       if (isOpen) input.focus();
     }
+
+    restoreHistory();
 
     toggle.addEventListener("click", () => setOpen(panel.hidden));
     close.addEventListener("click", () => setOpen(false));
@@ -177,7 +204,7 @@
       addMessage(message, "user");
       input.value = "";
 
-      const thinkingEl = addMessage("Thinking...", "bot");
+      const thinkingEl = addMessage("Thinking...", "bot", false);
 
       try {
         const kb = await loadKnowledge();
