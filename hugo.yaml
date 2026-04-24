@@ -26,22 +26,18 @@ menu:
       pageRef: /calendar
       weight: 2
 
-    - name: Docs
-      pageRef: /docs
-      weight: 3
-
     - name: Om mig
       pageRef: /about
-      weight: 4
+      weight: 3
 
     - name: GitHub ↗
       url: "https://github.com/jonasoutzen"
-      weight: 5
+      weight: 4
       params:
         icon: github
 
     - name: Search
-      weight: 6
+      weight: 5
       params:
         type: search
 

@@ -1,14 +1,40 @@
 ---
-title: About
+title: Om mig
 type: about
 ---
 
-## About Me
+## Om mig
 
-My name is Jonas Outzen.
+Jeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.
 
-I am a software developer focused on modern web technologies, including JavaScript, TypeScript, and React.
+Jeg er interesseret i at bygge praktiske og velfungerende applikationer, og jeg arbejder løbende på at udvikle mine færdigheder gennem projekter på studiet og i fritiden.
 
-I build projects as part of my studies and personal development, with an interest in creating efficient and practical solutions.
+## Teknologier jeg har arbejdet med
 
-I am currently a student and continuously improving my skills through hands-on development.
+**Frontend**
+- React
+- Vite
+- JavaScript / TypeScript
+- HTML & CSS
+
+**Backend**
+- Java
+- Javalin
+- Python
+
+**Databaser**
+- PostgreSQL
+- SQL
+
+**AI & Machine Learning**
+- LLM API-integration (OpenAI, Anthropic)
+- RAG (Retrieval Augmented Generation)
+- Scikit-learn
+- Pandas / NumPy
+
+**Værktøjer & andet**
+- Git & GitHub
+- Docker
+- Hugo
+- Jupyter Notebook
+- Maven
