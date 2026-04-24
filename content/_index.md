@@ -3,6 +3,8 @@ title: Jonas R. Outzen
 toc: false
 ---
 
+<img src="/Portofolio/images/profile.jpg" alt="Jonas Outzen" class="profile-picture" />
+
 Velkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer.
 
 {{< cards >}}

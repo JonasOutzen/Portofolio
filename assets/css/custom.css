@@ -1,29 +1,3 @@
-/* Light mode: magenta-white colorway */
-html:not(.dark) {
-  --primary-hue: 308;
-  --primary-saturation: 72%;
-  --primary-lightness: 42%;
-
-  background-color: #fdf8ff;
-}
-
-html:not(.dark) body {
-  background-color: #fdf8ff;
-}
-
-/* Navbar and sidebar background */
-html:not(.dark) header,
-html:not(.dark) nav,
-html:not(.dark) aside {
-  background-color: #fdf8ff;
-}
-
-/* Subtle magenta tint on card hover */
-html:not(.dark) .hextra-card:hover {
-  border-color: hsl(308, 72%, 75%);
-  background-color: #fdf0ff;
-}
-
 /* Profile image */
 .profile-picture {
   width: 140px;
@@ -32,5 +6,4 @@ html:not(.dark) .hextra-card:hover {
   object-fit: cover;
   display: block;
   margin-bottom: 1.5rem;
-  border: 3px solid hsl(308, 72%, 80%);
 }
