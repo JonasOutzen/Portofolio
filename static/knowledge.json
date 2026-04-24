@@ -1,154 +1,154 @@
 {
-  "generatedAt": "2026-04-24T07:48:16.279Z",
+  "generatedAt": "2026-04-24T08:07:38.180Z",
   "docs": [
     {
       "path": "content/_index.md",
       "url": "/",
-      "title": "home",
+      "title": "Jonas R. Outzen",
       "content": "Velkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer."
     },
     {
       "path": "content/about.md",
       "url": "/about",
-      "title": "about",
-      "content": "## Om mig\n\nJeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.\n\nJeg er interesseret i at bygge praktiske og velfungerende applikationer, og jeg arbejder løbende på at udvikle mine færdigheder gennem projekter på studiet og i fritiden.\n\n## Teknologier jeg har arbejdet med\n\n**Frontend**\n- React\n- Vite\n- JavaScript / TypeScript\n- HTML & CSS\n\n**Backend**\n- Java\n- Javalin\n- Python\n\n**Databaser**\n- PostgreSQL\n- SQL\n\n**AI & Machine Learning**\n- LLM API-integration (OpenAI, Anthropic)\n- RAG (Retrieval Augmented Generation)\n- Scikit-learn\n- Pandas / NumPy\n\n**Værktøjer & andet**\n- Git & GitHub\n- Docker\n- Hugo\n- Jupyter Notebook\n- Maven"
+      "title": "Om mig",
+      "content": "<img src=\"/Portofolio/images/profile.jpg\" alt=\"Jonas Outzen\" class=\"profile-picture\" />\n\n## Om mig\n\nJeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.\n\nJeg er interesseret i at bygge praktiske og velfungerende applikationer, og jeg arbejder løbende på at udvikle mine færdigheder gennem projekter på studiet og i fritiden.\n\n## Teknologier jeg har arbejdet med\n\n**Frontend**\n- React\n- Vite\n- JavaScript / TypeScript\n- HTML & CSS\n\n**Backend**\n- Java\n- Javalin\n- Python\n\n**Databaser**\n- PostgreSQL\n- SQL\n\n**AI & Machine Learning**\n- LLM API-integration (OpenAI, Anthropic)\n- RAG (Retrieval Augmented Generation)\n- Scikit-learn\n- Pandas / NumPy\n\n**Værktøjer & andet**\n- Git & GitHub\n- Docker\n- Hugo\n- Jupyter Notebook\n- Maven"
     },
     {
       "path": "content/calendar/_index.md",
       "url": "/calendar/",
-      "title": "home",
+      "title": "Calendar",
       "content": "Her kan du se en oversigt over, hvad vi arbejder med i AIDA-kurset uge for uge."
     },
     {
       "path": "content/calendar/uge-1.md",
       "url": "/calendar/uge-1",
-      "title": "uge-1",
+      "title": "Uge 1 – Kursusintro + Portfolio",
       "content": "**Uge:** 1 (10/4)\n\n**Tema:** Kursusintro + Portfolio\n\n**Indhold:** Introduktion til kurset, AI, eksamen og forventninger. Vi gennemgik hvad AI-drevne applikationer er, og hvordan LLMs passer ind i moderne softwarearkitektur. Fokus på at komme i gang med portfolio-arbejdet.\n\n## Hvad vi gjorde\n\nFørste gang startede med en gennemgang af kursusstruktur, læringsmål og eksamensforventninger. Herefter gik vi i gang med at oprette portfolio-websites ved hjælp af Hugo, en statisk site-generator. Vi valgte et Hugo-tema, satte det op lokalt og deployede det.\n\nVi så på:\n- Hvad er en LLM, og hvordan fungerer den?\n- Hvad er AI-drevne applikationer i praksis?\n- Hvordan dokumenterer man sit læringsforløb via et portfolio?\n\nSom forberedelse til kurset skulle man have set videoen *\"What is an LLM? (Large Language Model)\"*.\n\n## Output / portfolio\n\n- Deploy et portfolio-website (GitHub + hosting)\n- Indsend link til portfolio på Moodle\n- Skriv en kort refleksionsartikel om forventninger til AI i softwareudvikling\n\n## Ressourcer\n\n- Hugo – Statisk site-generator\n- Blowfish-template til Hugo\n- Hugo-tutorial i Toolbox (Portfolio-sektionen)"
     },
     {
       "path": "content/calendar/uge-10.md",
       "url": "/calendar/uge-10",
-      "title": "uge-10",
+      "title": "Uge 10 – Projektarbejde + teknisk sparring",
       "content": "**Uge:** 10 (18/5)\n\n**Tema:** Projektarbejde + teknisk sparring\n\n**Indhold:** Fokus på arkitektur, dataflow, API-integration og brug af AI-værktøjer i udviklingsprocessen. Vi gennemgår udfordringer i plenum og lægger en plan for det videre arbejde.\n\n## Hvad vi gjorde\n\nUgerne startede med en fælles gennemgang af de udfordringer, projektgrupperne stødte på. Vi delte erfaringer om:\n- Arkitekturvalg og systemdesign\n- Dataflow og integration mellem komponenter\n- Brug af AI-værktøjer (kodeagenter, LLM-API, RAG) i praksis\n\nHerefter arbejdede vi videre i grupper med teknisk sparring fra underviseren. Fokus var på at få afklaret arkitekturspørgsmål og fastlægge en konkret strategi for implementeringen fremad.\n\n## Output / portfolio\n\nPortfolio-indlæg om:\n- Arkitekturvalg og begrundelse\n- Implementeringsstrategi\n- Første spesifikationer og planer"
     },
     {
       "path": "content/calendar/uge-11.md",
       "url": "/calendar/uge-11",
-      "title": "uge-11",
+      "title": "Uge 11 – Projektarbejde + code review",
       "content": "**Uge:** 11 (22/5)\n\n**Tema:** Projektarbejde + code review\n\n**Indhold:** Projektarbejde med fælles code review. Vi undersøger, om brugen af kodeagenter og spec-driven development faktisk hjælper med at holde kvaliteten og processen oppe.\n\n## Hvad vi gjorde\n\nVi holdt fælles code review på tværs af grupper, hvor vi kiggede på hinandens kode og gav feedback. Diskussionerne handlede om:\n- Kodestruktur og læsbarhed\n- Brug af kodeagenter i processen – hvad de hjalp med, og hvad de introducerede af problemer\n- Spec-driven development i praksis – fulgte vi vores specifikationer?\n\nDet gav et godt indblik i, hvordan andres projekter er bygget op, og hvad man kan gøre anderledes i sin egen løsning.\n\n## Output / portfolio\n\nDokumentation af udviklingsprocessen – herunder refleksioner over code review-sessionen og brugen af AI-assisterede udviklingsmetoder."
     },
     {
       "path": "content/calendar/uge-12.md",
       "url": "/calendar/uge-12",
-      "title": "uge-12",
+      "title": "Uge 12 – Projektdemo og refleksion",
       "content": "**Uge:** 12 (26/5)\n\n**Tema:** Projektdemo og refleksion\n\n**Indhold:** De enkelte teams demonstrerer deres løsninger. Vi diskuterer tekniske valg, begrænsninger og hvad man ville gøre anderledes – en god forberedelse til eksamen.\n\n## Hvad vi gjorde\n\nHver gruppe præsenterede deres projekt med en live demo. Vi viste, hvad vi havde bygget, og gennemgik de vigtigste tekniske beslutninger. Efterfølgende var der diskussion og spørgsmål fra de andre grupper.\n\nVi reflekterede over:\n- Hvad fungerer i løsningen, og hvad er stadig et work in progress?\n- Hvilke AI-komponenter endte vi med at bruge, og hvorfor?\n- Hvad ville vi gøre anderledes, hvis vi startede forfra?\n\n## Output / portfolio\n\nAfsluttende projektdokumentation med:\n- Demo (eventuelt som video)\n- Refleksion over læringsudbytte\n- Hvad du ville gøre anderledes næste gang"
     },
     {
       "path": "content/calendar/uge-13.md",
       "url": "/calendar/uge-13",
-      "title": "uge-13",
+      "title": "Uge 13 – Eksamensforberedelse",
       "content": "**Uge:** 13 (29/5)\n\n**Tema:** Eksamensforberedelse\n\n**Indhold:** Kursusafslutning og forberedelse til eksamen. Vi gennemgår eksamensforventninger, finaliserer portfolios og samler op på kursets centrale emner.\n\n## Hvad vi gjorde\n\nDen sidste gang var dedikeret til at samle trådene fra hele kurset og forberede os til eksamen. Vi gennemgik:\n- Hvad eksamen fokuserer på, og hvad der forventes\n- Gennemgang af kursusemner: RAG, kodeagenter, LLM-API, MCP og spec-driven development\n- Hvad et godt portfolio indeholder og hvordan man præsenterer sit arbejde\n\nVi arbejdede med at færdiggøre portfolios og sikre, at alle cases er dokumenteret med refleksioner, output og tekniske beskrivelser.\n\n## Output / portfolio\n\n- Færdigt og opdateret portfolio med alle cases fra kurset\n- Refleksion over det samlede kursusforløb\n- Forberedelse til mundtlig eksamen"
     },
     {
       "path": "content/calendar/uge-2.md",
       "url": "/calendar/uge-2",
-      "title": "uge-2",
+      "title": "Uge 2 – Retrieval Augmented Generation (RAG)",
       "content": "**Uge:** 2 (13/4)\n\n**Tema:** Retrieval Augmented Generation (RAG)\n\n**Indhold:** Introduktion til RAG-arkitektur. Vi ser hvordan egne dokumenter kan kobles til en LLM via embeddings og retrieval. Fokus på hvornår RAG giver værdi, og hvornår det ikke gør.\n\n## Hvad vi gjorde\n\nEfter en introduktion til RAG, hvor vi gennemgik hvad RAG er, og hvornår det giver mening at bruge det, så vi på tre forskellige tilgange til RAG:\n\n- ChatGPTs customGPT\n- customGPT.ai\n- Dify.ai\n\nVi diskuterede fordele og ulemper ved hver tilgang, herunder brugervenlighed, omkostninger og fleksibilitet. Derefter implementerede vi en simpel RAG-chatbot ved hjælp af Dify.ai, hvor vi uploadede vores studieordning og brugte den som kilde til at besvare spørgsmål. Vi så også på, hvordan data kan forberedes og struktureres for at forbedre retrieval-processen. I dette tilfælde konverterede vi PDF'en til markdown.\n\n## Output / portfolio\n\nMini-projekt: Byg en simpel RAG-chatbot på eget materiale.\n\n## Data\n\n- Studieordning (PDF → konverteret til markdown)"
     },
     {
       "path": "content/calendar/uge-3.md",
       "url": "/calendar/uge-3",
-      "title": "uge-3",
+      "title": "Uge 3 – RAG demo og gennemgang",
       "content": "**Uge:** 3 (17/4)\n\n**Tema:** Vi bygger og tester RAG-løsninger\n\n**Indhold:** Demo af RAG-løsninger. Vi analyserer retrieval-kvalitet, promptdesign og datakilder. Diskussion af styrker og begrænsninger ved RAG-baserede systemer.\n\n## Hvad vi gjorde\n\nVi byggede RAG-løsninger fra bunden baseret på interessante cases. Fokus var på at forstå, hvad der gør en RAG-løsning god – hvad sker der, når datakilderne er dårligt strukturerede, og hvordan prompt-designet påvirker svarene?\n\nVi gennemgik:\n- Konvertering af data til markdown-format for bedre retrieval\n- Optimering af datakilder og struktur\n- Forbedring af retrieval og prompt-design\n- Opsætning af en personlig RAG-løsning på portfolio-websitet\n\n## Output / portfolio\n\nPortfolio-case der dokumenterer:\n- Din egen RAG-løsning\n- Læringsudbytte\n- En RAG-chatbot implementeret på dit portfolio-website"
     },
     {
       "path": "content/calendar/uge-4.md",
       "url": "/calendar/uge-4",
-      "title": "uge-4",
+      "title": "Uge 4 – Kodeagenter i softwareudvikling",
       "content": "**Uge:** 4 (20/4)\n\n**Tema:** Kodeagenter i softwareudvikling\n\n**Indhold:** Introduktion til AI-baserede kodeagenter som Claude Code, OpenAI Codex og Gemini CLI. Vi undersøger, hvad de kan bruges til i praksis, og hvordan samarbejdet mellem udvikler og AI-agent fungerer.\n\n## Hvad vi gjorde\n\nVi udforskede, hvad kodeagenter er, og hvilke opgaver de er gode til:\n- Arkitektur og systemdesign\n- Debugging og fejlfinding\n- Refaktorering af eksisterende kode\n- Test og testgenerering\n\nVi arbejdede praktisk med Claude Code og undersøgte, hvordan man bedst formulerer opgaver til en kodeagent, og hvornår det giver mening at lade agenten styre mere af processen. Vi diskuterede også begrænsninger – hvornår agenter fejler, og hvad udvikleren stadig selv skal styre.\n\n## Output / portfolio\n\nLøs en programmeringsopgave ved hjælp af en kodeagent og dokumentér arbejdsprocessen – hvad fungerede, hvad fungerede ikke, og hvad lærte du?"
     },
     {
       "path": "content/calendar/uge-5.md",
       "url": "/calendar/uge-5",
-      "title": "uge-5",
+      "title": "Uge 5 – LLM API-integration",
       "content": "**Uge:** 5 (24/4)\n\n**Tema:** LLM API-integration\n\n**Indhold:** Hvordan integrerer man en LLM i sin egen applikation? Vi gennemgår API-kald, prompt-struktur og struktureret output. Fokus på asynkron programmering og de udfordringer der opstår, når man kobler LLMs ind i et komplet system.\n\n## Hvad vi gjorde\n\nVi arbejdede med at bygge AI-drevne applikationer, hvor LLMs fungerer som eksterne services – ligesom man kalder et REST API. Vi gennemgik:\n\n- System prompts og user prompts\n- Struktureret output fra LLM-svar (JSON-format)\n- Fejlhåndtering, timeouts og uforudsigelige svar\n- Hvordan man positionerer LLMs som funktionelle komponenter i et større system\n\nVi arbejdede konkret med at bygge en mini-app der evaluerer opgaver ud fra en rubrik ved hjælp af et LLM-API.\n\n## Output / portfolio\n\nMini-app der kalder et LLM-API fra egen backend med tilknyttet frontend eller REST API-klient. Dokumentationen skal adressere selve API-integrationen og reflektere over udfordringer og muligheder.\n\n## Ressourcer\n\n- Tjekliste for LLM-integration (i Toolbox)\n- Ordliste med nøgletermer\n- Guide til dataintegration og API-optimering"
     },
     {
       "path": "content/calendar/uge-6.md",
       "url": "/calendar/uge-6",
-      "title": "uge-6",
+      "title": "Uge 6 – Model Context Protocol (MCP)",
       "content": "**Uge:** 6 (27/4)\n\n**Tema:** Model Context Protocol (MCP)\n\n**Indhold:** Introduktion til MCP og hvordan AI-værktøjer som Codex og Claude kan kalde brugerdefineret kode som tools. Vi bygger en simpel MCP-server og kobler den til Claude CLI.\n\n## Hvad vi gjorde\n\nVi lærte, hvad Model Context Protocol er, og hvad det giver mulighed for: at udvide en LLM med adgang til egne funktioner og datakilde via en standardiseret protokol. Vi byggede en Java-baseret MCP-server, der eksponerer et `add_numbers`-tool. Herefter koblet vi serveren til Codex og Claude CLI og testede, at vi kunne kalde funktionen via naturligt sprog.\n\nVi diskuterede:\n- Hvad MCP er, og hvorfor det er nyttigt\n- Forskellen på at bruge en chatbot og at bruge en tool-baseret agent\n- Muligheder og udfordringer ved MCP i AI-drevet udvikling\n\n## Output / portfolio\n\n- En Java-baseret MCP-server med et eksponeret `add_numbers`-tool\n- Dokumentation af implementeringen\n- Personlig refleksion over oplevelsen med at koble serveren til Codex og Claude CLI\n\n## Ressourcer\n\n- MCP Introduction (Toolbox)\n- MCP Tutorial (Toolbox)"
     },
     {
       "path": "content/calendar/uge-7.md",
       "url": "/calendar/uge-7",
-      "title": "uge-7",
+      "title": "Uge 7 – Spec Driven Development & Juridiske/etiske overvejelser",
       "content": "**Uge:** 7 (1/5)\n\n**Tema:** Spec Driven Development & Juridiske/etiske overvejelser\n\n**Indhold:** Udviklingsmetoder tilpasset agentassisteret programmering. Vi arbejder med specifikationer som styrende dokumenter for krav, design, implementering og review. Derudover gennemgår vi juridiske og etiske aspekter af AI-drevet softwareudvikling.\n\n## Hvad vi gjorde\n\nVi introducerede Spec Driven Development som en tilgang, hvor man skriver klare specifikationer, der guider kodeagenter i stedet for blot at give løse instruktioner. Vi så på, hvordan man opdeler features i opgaver, arbejdsflows og acceptkriterierner, som agenten kan arbejde ud fra.\n\nVi diskuterede også etiske og juridiske emner:\n- GDPR og EU's dataforordning i relation til AI-systemer\n- Bias i AI-modeller og ansvarlighed\n- Hvornår og hvordan man må bruge AI i softwareudvikling\n\nPensum inkluderede bl.a. Peter Naurs \"Programming as Theory Building\" og Martin Fowlers tanker om generativ AI i softwareudvikling.\n\n## Output / portfolio\n\n1. Skriv en kort feature-specifikation og brug den som grundlag for implementering eller planlægning med en kodeagent\n2. Refleksionsartikel om fordele og udfordringer ved spec-driven arbejde i AI-drevet udvikling\n3. Refleksion over de juridiske og etiske aspekter i dit mini-projekt\n\n## Ressourcer\n\n- Peter Naur: *Programming as Theory Building* (PDF + markdown)\n- Martin Fowler: Blogartikel om generative AI-tools\n- Wikipedia: Spec-driven development"
     },
     {
       "path": "content/calendar/uge-8.md",
       "url": "/calendar/uge-8",
-      "title": "uge-8",
+      "title": "Uge 8 – Virksomhedsoplæg",
       "content": "**Uge:** 8 (4/5)\n\n**Tema:** Virksomhedsoplæg\n\n**Indhold:** En virksomhed præsenterer konkrete problemstillinger, som vi forsøger at løse – potentielt ved hjælp af AI-applikationer og kodeagenter. Formålet er at inspirere til projektvalg og give virksomheden nye idéer til, hvordan de kan anvende AI i deres forretning.\n\n## Hvad vi gjorde\n\nEngestofte Gods holdt oplæg om deres forretning og præsenterede udfordringer og muligheder, hvor AI potentielt kan skabe værdi. Vi lyttede, stillede spørgsmål og brainstormede på løsningsidéer i grupper.\n\nDiskussionerne handlede bl.a. om:\n- Hvilke dele af virksomhedens processer kan automatiseres eller forbedres med AI?\n- Hvilke data har de til rådighed, og hvad kræver det at bygge ovenpå dem?\n- Hvad er realistisk at bygge inden for kursets rammer?\n\n## Output / portfolio\n\nIdéoplæg til projekt – en beskrivelse af en konkret problemstilling og et forslag til, hvordan AI kan bruges til at adressere den."
     },
     {
       "path": "content/calendar/uge-9.md",
       "url": "/calendar/uge-9",
-      "title": "uge-9",
+      "title": "Uge 9 – Projektstart",
       "content": "**Uge:** 9 (11/5)\n\n**Tema:** Projektstart\n\n**Indhold:** Projektteams dannes og udviklingen af en AI-drevet applikation begynder – enten baseret på virksomhedscasen fra Uge 8 eller en selvvalgt idé.\n\n## Hvad vi gjorde\n\nVi valgte projektemner og dannede grupper. Herefter begyndte vi at definere scope, arkitektur og teknologivalg for vores projekter. Vi arbejdede med at skrive en første systemskitse og en projektbeskrivelse, der tydeliggør hvad vi vil bygge, og hvordan AI indgår i løsningen.\n\nVi overvejede:\n- Hvilken problemstilling løser projektet?\n- Hvilke AI-komponenter indgår (LLM-API, RAG, MCP, kodeagent)?\n- Hvad er en realistisk MVP inden for kursets tidsramme?\n\n## Output / portfolio\n\n- Projektbeskrivelse: formål, afgrænsning og målgruppe\n- Systemskitse: overordnet arkitektur og dataflow"
     },
     {
       "path": "content/docs/_index.md",
       "url": "/docs/",
-      "title": "home",
+      "title": "Documentation",
       "content": "This is a demo of the theme's documentation layout.\n\n## Hello, World!\n\n```go {filename=\"main.go\"}\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n```"
     },
     {
       "path": "content/docs/first-page.md",
       "url": "/docs/first-page",
-      "title": "first-page",
+      "title": "Demo Page",
       "content": "A simple demo page."
     },
     {
       "path": "content/docs/folder/_index.md",
       "url": "/docs/folder/",
-      "title": "home",
+      "title": "Folder",
       "content": "Pages can be organized into folders."
     },
     {
       "path": "content/docs/folder/leaf.md",
       "url": "/docs/folder/leaf",
-      "title": "leaf",
+      "title": "Leaf Page",
       "content": "This page is under a folder."
     },
     {
       "path": "content/projects/_index.md",
       "url": "/projects/",
-      "title": "home",
+      "title": "Alle mine projekter",
       "content": "Her kan du se et udvalg af de projekter, jeg har arbejdet på."
     },
     {
       "path": "content/projects/bi-exam.md",
       "url": "/projects/bi-exam",
-      "title": "bi-exam",
+      "title": "BI & Machine Learning Exam",
       "content": "A Business Intelligence exam project investigating how match conditions and in-game statistics influence football match outcomes using statistical analysis and machine learning.\n\n## GitHub\n\n[View the repository](https://github.com/JonasOutzen/BI-exam)\n\n## Project overview\n\nThis project examines whether match statistics and environmental conditions correlate with winning football matches or scoring goals. Using BI techniques and machine learning, we explore patterns in structured match data to test a series of hypotheses around weather, possession, passing accuracy, discipline, and home advantage.\n\nThe project follows the full BI workflow: problem formulation, data preparation, modelling, and presentation of results.\n\n## Research questions\n\n- Does weather affect how football matches are played?\n- Which match statistics are most strongly correlated with winning?\n- Does home advantage significantly impact match outcomes?\n- Are disciplinary actions (cards and fouls) related to match results?\n\n## Hypotheses tested\n\n- More goals and cards are given in rainy matches compared to dry conditions\n- Higher passing accuracy and possession lead to more goals and wins\n- Teams win more at home and receive fewer fouls\n- Corner kicks, free kicks, and cards correlate with match outcomes\n\n## Data\n\nThe dataset includes per-match statistics such as goals, possession, passing accuracy, fouls, yellow/red cards, penalties, corner kicks, and shots on target, plus optional weather data.\n\n## Machine learning models\n\n- Logistic Regression\n- Decision Trees\n- Random Forest\n- Classification models predicting match outcomes\n\nModels were evaluated using accuracy, precision, recall, and confusion matrices.\n\n## Tech stack\n\n- Python\n- Pandas\n- NumPy\n- Matplotlib / Seaborn\n- Scikit-learn\n- Jupyter Notebook\n\n## Team\n\n- Jonas Outzen\n- Marcus Forsberg\n- Asger Storgaard\n- Frederik Bastiansen"
     },
     {
       "path": "content/projects/carport.md",
       "url": "/projects/carport",
-      "title": "carport",
+      "title": "Carport Project",
       "content": "A full-stack semester project developed for Johannes Fog, focused on improving the process of designing, pricing, and managing custom carport offers.\n\n## GitHub\n\n[View the repository](https://github.com/MarcusPFF/Carport-Fog)\n\n## Project overview\n\nThis application allows customers to configure a carport, enter their information, and request a non-binding offer. The system generates a price estimate and lets the customer view a dynamic technical drawing of the selected carport. Sellers can then manage incoming offers, update dimensions and pricing, and continue the sales process through an internal dashboard. \n\nIf the customer accepts the offer, the system can generate a material list based on the final agreement. \n\n## Team\n\nDeveloped by:\n\n- Jonathan Kudsk\n- Marcus Forsberg\n- Jonas Outzen \n\n## Features\n\n- Responsive interface\n- Dynamic offer generation\n- Technical drawing preview\n- Email integration with SendGrid\n- Seller administration page\n- Cloud database integration\n- PDF material list generation \n\n## Tech stack\n\n- Java\n- Javalin\n- Thymeleaf\n- Maven\n- JUnit\n- PostgreSQL\n- Docker\n- SendGrid\n- PDFBox \n\n## What I worked on\n\nI contributed to the development of the application as part of a team project, with focus on the full-stack flow between user input, offer handling, and dynamic rendering. The project combined backend logic, frontend templates, database integration, and user-facing functionality in one complete system.\n\n## Important note\n\nThe repository notes that some functionality is limited without the required environment variables for the database and SendGrid setup."
     },
     {
       "path": "content/projects/meditation.md",
       "url": "/projects/meditation",
-      "title": "meditation",
+      "title": "Meditation Quiz",
       "content": "A meditation quiz web app built with AI assistance, focused on teaching users how to meditate through an interactive quiz format.\n\n## Live site\n\n[jonasoutzen.github.io/meditation-ai-project](https://jonasoutzen.github.io/meditation-ai-project/)\n\n## Project overview\n\nThis project is a quiz-based web application about meditation and mindfulness. The goal was to create an engaging and calming experience that helps users learn how to meditate through guided questions and answers.\n\nThe entire application was coded with the help of Claude AI, exploring how AI-assisted development can speed up the process of building complete frontend projects.\n\n## Features\n\n- Interactive quiz format focused on meditation techniques\n- Calming coffee and cream colour scheme for a relaxed aesthetic\n- Responsive UI built with React\n- Clean component structure and smooth user experience\n\n## Tech stack\n\n- React\n- JavaScript (ES6+)\n- CSS (custom coffee & cream theme)\n- GitHub Pages (deployment)\n\n## What I worked on\n\nThis project was an experiment in AI-assisted development. I used Claude AI to help build the full application — from component structure to styling — while focusing on the user experience and visual design. It gave practical insight into how AI tools can be used as a development partner rather than just a code autocomplete."
     },
     {
       "path": "content/projects/vite-react.md",
       "url": "/projects/vite-react",
-      "title": "vite-react",
+      "title": "Phonyfy - Frontend Exam",
       "content": "This project was developed as part of our **3rd semester frontend exam**, focusing on modern React development and fast development workflows.\n\n## GitHub\n\n(Add your repo link here if you have one)\n\n## Project overview\n\nThis project is built using **React and Vite**, providing a fast and modern development environment with Hot Module Replacement (HMR) and optimized build performance.\n\nThe goal of the project was to create a responsive and efficient frontend application using modern tools and best practices.\n\n## Developed by\n\n- Jonas Outzen  \n- Asger Høffner  \n\n## Key features\n\n- Fast development with Vite and HMR\n- Component-based architecture using React\n- Clean and structured project setup\n- ESLint configuration for code quality\n- Optimized build process\n\n## Technologies used\n\n- React\n- Vite\n- JavaScript (ES6+)\n- ESLint\n\n## What I worked on\n\nIn this project, I focused on building reusable React components and structuring the application in a scalable way.  \n\nWe worked with modern frontend workflows, including fast refresh, modular code organization, and maintaining clean and readable code through linting.\n\nThe project gave practical experience with how modern frontend tools improve both developer experience and performance.\n\n## Notes\n\nThe project is based on a minimal Vite + React setup, which can be extended further with tools like TypeScript and more advanced configurations depending on project requirements."
     }
   ]
