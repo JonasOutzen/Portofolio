@@ -3,6 +3,8 @@ title: Om mig
 type: about
 ---
 
+<img src="/Portofolio/images/profile.jpg" alt="Jonas Outzen" class="profile-picture" />
+
 ## Om mig
 
 Jeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.
