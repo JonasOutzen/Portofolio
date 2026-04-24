@@ -22,7 +22,7 @@ menu:
       pageRef: /projects
       weight: 1
 
-    - name: Calendar
+    - name: Kalender
       pageRef: /calendar
       weight: 2
 
