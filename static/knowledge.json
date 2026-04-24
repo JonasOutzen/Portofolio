@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-04-24T07:38:53.192Z",
+  "generatedAt": "2026-04-24T07:48:16.279Z",
   "docs": [
     {
       "path": "content/_index.md",
       "url": "/",
       "title": "home",
-      "content": "This is the landing page.\n\n## Explore\n\n  \n  \n\n## Documentation\n\nFor more information, visit [Hextra](https://imfing.github.io/hextra)."
+      "content": "Velkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer."
     },
     {
       "path": "content/about.md",
       "url": "/about",
       "title": "about",
-      "content": "## About Me\n\nMy name is Jonas Outzen.\n\nI am a software developer focused on modern web technologies, including JavaScript, TypeScript, and React.\n\nI build projects as part of my studies and personal development, with an interest in creating efficient and practical solutions.\n\nI am currently a student and continuously improving my skills through hands-on development."
+      "content": "## Om mig\n\nJeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.\n\nJeg er interesseret i at bygge praktiske og velfungerende applikationer, og jeg arbejder løbende på at udvikle mine færdigheder gennem projekter på studiet og i fritiden.\n\n## Teknologier jeg har arbejdet med\n\n**Frontend**\n- React\n- Vite\n- JavaScript / TypeScript\n- HTML & CSS\n\n**Backend**\n- Java\n- Javalin\n- Python\n\n**Databaser**\n- PostgreSQL\n- SQL\n\n**AI & Machine Learning**\n- LLM API-integration (OpenAI, Anthropic)\n- RAG (Retrieval Augmented Generation)\n- Scikit-learn\n- Pandas / NumPy\n\n**Værktøjer & andet**\n- Git & GitHub\n- Docker\n- Hugo\n- Jupyter Notebook\n- Maven"
     },
     {
       "path": "content/calendar/_index.md",
@@ -128,10 +128,22 @@
       "content": "Her kan du se et udvalg af de projekter, jeg har arbejdet på."
     },
     {
+      "path": "content/projects/bi-exam.md",
+      "url": "/projects/bi-exam",
+      "title": "bi-exam",
+      "content": "A Business Intelligence exam project investigating how match conditions and in-game statistics influence football match outcomes using statistical analysis and machine learning.\n\n## GitHub\n\n[View the repository](https://github.com/JonasOutzen/BI-exam)\n\n## Project overview\n\nThis project examines whether match statistics and environmental conditions correlate with winning football matches or scoring goals. Using BI techniques and machine learning, we explore patterns in structured match data to test a series of hypotheses around weather, possession, passing accuracy, discipline, and home advantage.\n\nThe project follows the full BI workflow: problem formulation, data preparation, modelling, and presentation of results.\n\n## Research questions\n\n- Does weather affect how football matches are played?\n- Which match statistics are most strongly correlated with winning?\n- Does home advantage significantly impact match outcomes?\n- Are disciplinary actions (cards and fouls) related to match results?\n\n## Hypotheses tested\n\n- More goals and cards are given in rainy matches compared to dry conditions\n- Higher passing accuracy and possession lead to more goals and wins\n- Teams win more at home and receive fewer fouls\n- Corner kicks, free kicks, and cards correlate with match outcomes\n\n## Data\n\nThe dataset includes per-match statistics such as goals, possession, passing accuracy, fouls, yellow/red cards, penalties, corner kicks, and shots on target, plus optional weather data.\n\n## Machine learning models\n\n- Logistic Regression\n- Decision Trees\n- Random Forest\n- Classification models predicting match outcomes\n\nModels were evaluated using accuracy, precision, recall, and confusion matrices.\n\n## Tech stack\n\n- Python\n- Pandas\n- NumPy\n- Matplotlib / Seaborn\n- Scikit-learn\n- Jupyter Notebook\n\n## Team\n\n- Jonas Outzen\n- Marcus Forsberg\n- Asger Storgaard\n- Frederik Bastiansen"
+    },
+    {
       "path": "content/projects/carport.md",
       "url": "/projects/carport",
       "title": "carport",
       "content": "A full-stack semester project developed for Johannes Fog, focused on improving the process of designing, pricing, and managing custom carport offers.\n\n## GitHub\n\n[View the repository](https://github.com/MarcusPFF/Carport-Fog)\n\n## Project overview\n\nThis application allows customers to configure a carport, enter their information, and request a non-binding offer. The system generates a price estimate and lets the customer view a dynamic technical drawing of the selected carport. Sellers can then manage incoming offers, update dimensions and pricing, and continue the sales process through an internal dashboard. \n\nIf the customer accepts the offer, the system can generate a material list based on the final agreement. \n\n## Team\n\nDeveloped by:\n\n- Jonathan Kudsk\n- Marcus Forsberg\n- Jonas Outzen \n\n## Features\n\n- Responsive interface\n- Dynamic offer generation\n- Technical drawing preview\n- Email integration with SendGrid\n- Seller administration page\n- Cloud database integration\n- PDF material list generation \n\n## Tech stack\n\n- Java\n- Javalin\n- Thymeleaf\n- Maven\n- JUnit\n- PostgreSQL\n- Docker\n- SendGrid\n- PDFBox \n\n## What I worked on\n\nI contributed to the development of the application as part of a team project, with focus on the full-stack flow between user input, offer handling, and dynamic rendering. The project combined backend logic, frontend templates, database integration, and user-facing functionality in one complete system.\n\n## Important note\n\nThe repository notes that some functionality is limited without the required environment variables for the database and SendGrid setup."
+    },
+    {
+      "path": "content/projects/meditation.md",
+      "url": "/projects/meditation",
+      "title": "meditation",
+      "content": "A meditation quiz web app built with AI assistance, focused on teaching users how to meditate through an interactive quiz format.\n\n## Live site\n\n[jonasoutzen.github.io/meditation-ai-project](https://jonasoutzen.github.io/meditation-ai-project/)\n\n## Project overview\n\nThis project is a quiz-based web application about meditation and mindfulness. The goal was to create an engaging and calming experience that helps users learn how to meditate through guided questions and answers.\n\nThe entire application was coded with the help of Claude AI, exploring how AI-assisted development can speed up the process of building complete frontend projects.\n\n## Features\n\n- Interactive quiz format focused on meditation techniques\n- Calming coffee and cream colour scheme for a relaxed aesthetic\n- Responsive UI built with React\n- Clean component structure and smooth user experience\n\n## Tech stack\n\n- React\n- JavaScript (ES6+)\n- CSS (custom coffee & cream theme)\n- GitHub Pages (deployment)\n\n## What I worked on\n\nThis project was an experiment in AI-assisted development. I used Claude AI to help build the full application — from component structure to styling — while focusing on the user experience and visual design. It gave practical insight into how AI tools can be used as a development partner rather than just a code autocomplete."
     },
     {
       "path": "content/projects/vite-react.md",
