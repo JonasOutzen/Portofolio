@@ -3,7 +3,7 @@ title: Om mig
 type: about
 ---
 
-<img src="/Portofolio/images/profile.jpg" alt="Jonas Outzen" class="profile-picture" />
+<img src="/Portofolio/images/profile.jpg" alt="Jonas Outzen" style="width:140px;height:140px;border-radius:50%;object-fit:cover;display:block;margin-bottom:1.5rem;" />
 
 ## Om mig
 
