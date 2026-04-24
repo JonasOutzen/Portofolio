@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-04-24T08:12:37.890Z",
+  "generatedAt": "2026-04-24T08:15:56.425Z",
   "docs": [
     {
       "path": "content/_index.md",
       "url": "/",
       "title": "Jonas R. Outzen",
-      "content": "<img src=\"/Portofolio/images/profile.jpg\" alt=\"Jonas Outzen\" class=\"profile-picture\" />\n\nVelkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer."
+      "content": "<img src=\"/Portofolio/images/profile.jpg\" alt=\"Jonas Outzen\" style=\"width:140px;height:140px;border-radius:50%;object-fit:cover;display:block;margin-bottom:1.5rem;\" />\n\nVelkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer."
     },
     {
       "path": "content/about.md",
       "url": "/about",
       "title": "Om mig",
-      "content": "<img src=\"/Portofolio/images/profile.jpg\" alt=\"Jonas Outzen\" class=\"profile-picture\" />\n\n## Om mig\n\nJeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.\n\nJeg er interesseret i at bygge praktiske og velfungerende applikationer, og jeg arbejder løbende på at udvikle mine færdigheder gennem projekter på studiet og i fritiden.\n\n## Teknologier jeg har arbejdet med\n\n**Frontend**\n- React\n- Vite\n- JavaScript / TypeScript\n- HTML & CSS\n\n**Backend**\n- Java\n- Javalin\n- Python\n\n**Databaser**\n- PostgreSQL\n- SQL\n\n**AI & Machine Learning**\n- LLM API-integration (OpenAI, Anthropic)\n- RAG (Retrieval Augmented Generation)\n- Scikit-learn\n- Pandas / NumPy\n\n**Værktøjer & andet**\n- Git & GitHub\n- Docker\n- Hugo\n- Jupyter Notebook\n- Maven"
+      "content": "<img src=\"/Portofolio/images/profile.jpg\" alt=\"Jonas Outzen\" style=\"width:140px;height:140px;border-radius:50%;object-fit:cover;display:block;margin-bottom:1.5rem;\" />\n\n## Om mig\n\nJeg hedder Jonas, jeg er 21 år gammel og studerer til datamatiker på Cphbusiness.\n\nJeg er interesseret i at bygge praktiske og velfungerende applikationer, og jeg arbejder løbende på at udvikle mine færdigheder gennem projekter på studiet og i fritiden.\n\n## Teknologier jeg har arbejdet med\n\n**Frontend**\n- React\n- Vite\n- JavaScript / TypeScript\n- HTML & CSS\n\n**Backend**\n- Java\n- Javalin\n- Python\n\n**Databaser**\n- PostgreSQL\n- SQL\n\n**AI & Machine Learning**\n- LLM API-integration (OpenAI, Anthropic)\n- RAG (Retrieval Augmented Generation)\n- Scikit-learn\n- Pandas / NumPy\n\n**Værktøjer & andet**\n- Git & GitHub\n- Docker\n- Hugo\n- Jupyter Notebook\n- Maven"
     },
     {
       "path": "content/calendar/_index.md",
