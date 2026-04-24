@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-24T08:07:38.180Z",
+  "generatedAt": "2026-04-24T08:12:37.890Z",
   "docs": [
     {
       "path": "content/_index.md",
       "url": "/",
       "title": "Jonas R. Outzen",
-      "content": "Velkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer."
+      "content": "<img src=\"/Portofolio/images/profile.jpg\" alt=\"Jonas Outzen\" class=\"profile-picture\" />\n\nVelkommen til mit portfolio. Her kan du se projekter fra mit studie som datamatiker og mit arbejde med AI-drevne applikationer."
     },
     {
       "path": "content/about.md",
