@@ -176,10 +176,20 @@
       } catch {}
     }
 
+    function renderMarkdown(text) {
+      return text
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*(.+?)\*/g, "<em>$1</em>")
+        .replace(/^- (.+)$/gm, "<li>$1</li>")
+        .replace(/(<li>.*<\/li>)/s, "<ul>$1</ul>")
+        .replace(/\n/g, "<br>");
+    }
+
     function addMessage(text, role, persist = true) {
       const el = document.createElement("div");
       el.className = `jonas-chatbot-msg ${role}`;
-      el.textContent = text;
+      el.innerHTML = renderMarkdown(text);
       messages.appendChild(el);
       messages.scrollTop = messages.scrollHeight;
       if (persist) saveHistory();
@@ -228,7 +238,8 @@
                   "You are a helpful assistant for Jonas Outzen's portfolio. " +
                   "Answer only based on the provided knowledge. " +
                   "If something isn't mentioned, say you don't have that info. " +
-                  "Be concise and friendly. Answer in the same language the user writes in.",
+                  "Be concise and friendly. Answer in the same language the user writes in. " +
+                  "You may use simple markdown: **bold**, *italic*, and bullet lists with -.",
               },
               {
                 role: "user",
