@@ -10,7 +10,12 @@
       <div id="jonas-chatbot-panel" hidden>
         <div id="jonas-chatbot-header">
           <strong>Jonas Bot</strong>
-          <button id="jonas-chatbot-close" aria-label="Close chat">×</button>
+          <div style="display:flex;gap:6px;align-items:center;">
+            <button id="jonas-chatbot-clear" aria-label="Clear chat" title="Ryd chat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+            </button>
+            <button id="jonas-chatbot-close" aria-label="Close chat">×</button>
+          </div>
         </div>
         <div id="jonas-chatbot-messages">
           <div class="jonas-chatbot-msg bot">
@@ -75,6 +80,17 @@
         cursor: pointer;
         color: #444;
       }
+      #jonas-chatbot-clear {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        color: #888;
+        padding: 2px 4px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+      }
+      #jonas-chatbot-clear:hover { color: #e11d48; background: #fff1f2; }
       #jonas-chatbot-messages {
         flex: 1;
         overflow-y: auto;
@@ -139,6 +155,7 @@
     const toggle = document.getElementById("jonas-chatbot-toggle");
     const panel = document.getElementById("jonas-chatbot-panel");
     const close = document.getElementById("jonas-chatbot-close");
+    const clearBtn = document.getElementById("jonas-chatbot-clear");
     const form = document.getElementById("jonas-chatbot-form");
     const input = document.getElementById("jonas-chatbot-input");
     const messages = document.getElementById("jonas-chatbot-messages");
@@ -156,7 +173,7 @@
     function saveHistory() {
       const msgs = [...messages.querySelectorAll(".jonas-chatbot-msg")].map(el => ({
         role: el.classList.contains("user") ? "user" : "bot",
-        text: el.textContent,
+        html: el.innerHTML,
       }));
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(msgs));
     }
@@ -164,12 +181,11 @@
     function restoreHistory() {
       try {
         const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "[]");
-        // Remove the default greeting if we have saved history
         if (saved.length > 0) messages.innerHTML = "";
-        saved.forEach(({ role, text }) => {
+        saved.forEach(({ role, html }) => {
           const el = document.createElement("div");
           el.className = `jonas-chatbot-msg ${role}`;
-          el.textContent = text;
+          el.innerHTML = html;
           messages.appendChild(el);
         });
         messages.scrollTop = messages.scrollHeight;
@@ -203,8 +219,14 @@
 
     restoreHistory();
 
+    function clearChat() {
+      sessionStorage.removeItem(STORAGE_KEY);
+      messages.innerHTML = `<div class="jonas-chatbot-msg bot">Hi — ask me about Jonas, his projects, or this site.</div>`;
+    }
+
     toggle.addEventListener("click", () => setOpen(panel.hidden));
     close.addEventListener("click", () => setOpen(false));
+    clearBtn.addEventListener("click", clearChat);
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
