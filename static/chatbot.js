@@ -242,7 +242,7 @@
         sources.forEach(s => {
           const base = "https://jonasoutzen.github.io/Portofolio";
           const href = s.url.startsWith("http") ? s.url : base + s.url;
-          html += `<a href="${href}" target="_blank" class="jonas-chatbot-source-link">${s.title}</a>`;
+          html += `<a href="${href}" class="jonas-chatbot-source-link">${s.title}</a>`;
         });
         html += `</div>`;
       }
