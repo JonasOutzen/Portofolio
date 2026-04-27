@@ -36,8 +36,6 @@ På den måde afspejler chatbotten altid det aktuelle indhold på portfolien, ud
 
 <div style="clear: both;"></div>
 
-<img src="/Portofolio/images/Api usage.png" alt="OpenAI API usage" style="float: left; max-width: 45%; border-radius: 8px; margin: 0 1.5rem 1rem 0;" />
+Herunder ses mit faktiske forbrug på OpenAI's platform — bevis på at chatbotten rent faktisk bruger API'et live ved hvert spørgsmål.
 
-Herover ses mit faktiske forbrug på OpenAI's platform — bevis på at chatbotten rent faktisk bruger API'et live ved hvert spørgsmål.
-
-<div style="clear: both;"></div>
+<img src="/Portofolio/images/Api usage.png" alt="OpenAI API usage" style="max-width: 100%; border-radius: 8px; margin-top: 0.5rem;" />

@@ -17,8 +17,6 @@ Til denne opgave har jeg arbejdet med **Claude Code** som kodeagent — og det h
 
 Det første vi lavede sammen var en [Meditation Quiz](https://jonasoutzen.github.io/meditation-ai-project/), en interaktiv webapplikation om meditationsteknikker bygget i React. Det var mit første rigtige eksperiment med AI-assisteret udvikling, og det ændrede hurtigt min opfattelse af, hvad en kodeagent egentlig kan.
 
-<div style="clear: both;"></div>
-
 ### Hvad er en kodeagent?
 
 En kodeagent er ikke bare en chatbot, der hjælper med at forklare kode. Det er et AI-system, der aktivt kan læse filer, skrive kode, køre kommandoer og navigere i en hel projektstruktur — og dermed fungere som en egentlig udviklingspartner.
@@ -31,4 +29,4 @@ Det, der overraskede mig mest, var ikke hastigheden, men måden agenten arbejder
 
 Det har givet mig en meget mere praktisk forståelse af, hvad AI-assisteret udvikling faktisk betyder i hverdagen som udvikler.
 
-<img src="/Portofolio/images/Meditationsquizzen.png" alt="Screenshot af Meditation Quiz" style="float: right; max-width: 45%; border-radius: 8px; margin: 0 0 1rem 1.5rem;" />
+<img src="/Portofolio/images/Meditationsquizzen.png" alt="Screenshot af Meditation Quiz" style="max-width: 100%; border-radius: 8px; margin-top: 1rem;" />
