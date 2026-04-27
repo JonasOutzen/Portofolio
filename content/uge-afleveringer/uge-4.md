@@ -29,4 +29,4 @@ Det, der overraskede mig mest, var ikke hastigheden, men måden agenten arbejder
 
 Det har givet mig en meget mere praktisk forståelse af, hvad AI-assisteret udvikling faktisk betyder i hverdagen som udvikler.
 
-<img src="/Portofolio/images/Meditationsquizzen.png" alt="Screenshot af Meditation Quiz" style="max-width: 100%; border-radius: 8px; margin-top: 1rem;" />
+<img src="/Portofolio/images/Meditationsquizzen.png" alt="Screenshot af Meditation Quiz" style="display: block; max-width: 100%; border-radius: 8px; margin-top: 1rem;" />
