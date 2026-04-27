@@ -23,6 +23,10 @@ Hver gang jeg pusher til GitHub, kører et script, der samler alle mine markdown
 
 Når en bruger stiller et spørgsmål, henter chatbotten `knowledge.json` og sender indholdet som kontekst direkte til OpenAI's API — fra browseren, uden backend.
 
+<img src="/Portofolio/images/Chatbot eksempel.png" alt="Screenshot af chatbot på portfolien" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;" />
+
+<img src="/Portofolio/images/Api usage.png" alt="OpenAI API usage" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+
 ### Automatiseringsflow
 
 1. Push til GitHub
