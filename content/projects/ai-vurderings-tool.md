@@ -31,10 +31,10 @@ Projektet er bygget med en opdelt arkitektur: frontenden er en statisk React-app
 
 - React (frontend)
 - GitHub Pages (frontend hosting)
-- Node.js / Express (backend)
+- Java (backend)
 - Render (backend hosting)
 - OpenAI API
 
 ## Hvad jeg arbejdede med
 
-Jeg designede og implementerede hele applikationen – fra React-frontenden til Express-backenden med OpenAI-integration. Projektet gav erfaring med API-nøglehåndtering på serversiden, CORS-opsætning på tværs af domæner og cloud-deployment af både statiske og dynamiske tjenester.
+Jeg designede og implementerede hele applikationen – fra React-frontenden til Java-backenden med OpenAI-integration. Projektet gav erfaring med API-nøglehåndtering på serversiden, CORS-opsætning på tværs af domæner og cloud-deployment af både statiske og dynamiske tjenester.
