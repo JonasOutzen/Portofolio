@@ -20,11 +20,17 @@ Personlig portfolio bygget med [Hugo](https://gohugo.io/) og [Hextra](https://gi
 
 ## AI-chatbot
 
+<table><tr><td valign="top" width="55%">
+
 Chatbotten bruger portfolioens eget indhold som vidensbase. Hver gang der pushes til `main`, kører et Node.js-script (`scripts/build-knowledge.mjs`) der samler alle markdown-filer til en `knowledge.json`. Denne fil serveres statisk via GitHub Pages.
 
 Når en bruger stiller et spørgsmål, hentes `knowledge.json` og sendes som kontekst til OpenAI's API. API-nøglen injiceres ved build-tid via GitHub Actions secrets.
 
+</td><td valign="top" width="45%">
+
 ![Chatbot eksempel](static/images/Chatbot%20eksempel.png)
+
+</td></tr></table>
 
 ---
 
