@@ -17,6 +17,8 @@ Til denne opgave har jeg bygget **AI Vurderings-Tool** — en webapplikation, de
 
 [Se projektet her](https://jonasoutzen.github.io/AI-Vurderings-Tool/)
 
+<img src="/Portofolio/images/AI-Vurdering Forside.png" alt="AI Vurderings-Tool forside" style="max-width: 100%; border-radius: 8px; margin-top: 1rem;" />
+
 ### Hvordan det virker
 
 Applikationen er opdelt i to dele:
@@ -26,6 +28,8 @@ Brugeren indsætter sin praktikrapport i en tekstboks og sender den af sted. Fro
 
 **Backend (Java → Render)**
 Rapporten sendes til en Java-backend deployet på Render. Backenden modtager teksten, formulerer et prompt og kalder OpenAI's API. Svaret — en struktureret vurdering med styrker, svagheder og en samlet bedømmelse — returneres til frontenden og vises til brugeren.
+
+<img src="/Portofolio/images/AI-Vurdering Eksempelsvar.png" alt="AI Vurderings-Tool eksempelsvar" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
 
 ### Hvorfor en backend?
 
