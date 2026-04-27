@@ -23,9 +23,7 @@ Hver gang jeg pusher til GitHub, kører et script, der samler alle mine markdown
 
 Når en bruger stiller et spørgsmål, henter chatbotten `knowledge.json` og sender indholdet som kontekst direkte til OpenAI's API — fra browseren, uden backend.
 
-<img src="/Portofolio/images/Chatbot eksempel.png" alt="Screenshot af chatbot på portfolien" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;" />
-
-<img src="/Portofolio/images/Api usage.png" alt="OpenAI API usage" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+<img src="/Portofolio/images/Chatbot eksempel.png" alt="Screenshot af chatbot på portfolien" style="float: right; max-width: 45%; border-radius: 8px; margin: 0 0 1rem 1.5rem;" />
 
 ### Automatiseringsflow
 
@@ -35,3 +33,11 @@ Når en bruger stiller et spørgsmål, henter chatbotten `knowledge.json` og sen
 4. Chatbotten henter filen live ved hvert spørgsmål og sender den som kontekst til OpenAI
 
 På den måde afspejler chatbotten altid det aktuelle indhold på portfolien, uden at jeg manuelt skal opdatere noget.
+
+<div style="clear: both;"></div>
+
+<img src="/Portofolio/images/Api usage.png" alt="OpenAI API usage" style="float: left; max-width: 45%; border-radius: 8px; margin: 0 1.5rem 1rem 0;" />
+
+Herover ses mit faktiske forbrug på OpenAI's platform — bevis på at chatbotten rent faktisk bruger API'et live ved hvert spørgsmål.
+
+<div style="clear: both;"></div>
