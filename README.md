@@ -4,7 +4,7 @@ Personlig portfolio bygget med [Hugo](https://gohugo.io/) og [Hextra](https://gi
 
 **Live:** [jonasoutzen.github.io/Portofolio](https://jonasoutzen.github.io/Portofolio/)
 
-![Portfolio med chatbot](static/images/Chatbot%20eksempel.png)
+![Portfolio forside](static/images/PortofolioForside.png)
 
 ---
 
