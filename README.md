@@ -24,6 +24,8 @@ Chatbotten bruger portfolioens eget indhold som vidensbase. Hver gang der pushes
 
 Når en bruger stiller et spørgsmål, hentes `knowledge.json` og sendes som kontekst til OpenAI's API. API-nøglen injiceres ved build-tid via GitHub Actions secrets.
 
+![Chatbot eksempel](static/images/Chatbot%20eksempel.png)
+
 ---
 
 ## Deployment
