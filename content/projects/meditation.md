@@ -6,9 +6,13 @@ weight: 3
 
 En meditationsquiz bygget med AI-assistance, med fokus på at lære brugerne at meditere gennem et interaktivt quizformat.
 
-## Live site
+## Demo
 
-[jonasoutzen.github.io/meditation-ai-project](https://jonasoutzen.github.io/meditation-ai-project/)
+[Åbn applikationen](https://jonasoutzen.github.io/meditation-ai-project/)
+
+## GitHub
+
+[Se repositoriet](https://github.com/JonasOutzen/meditation-ai-project)
 
 ## Projektbeskrivelse
 
