@@ -14,5 +14,5 @@ Her finder du mine ugentlige afleveringer fra AIDA-kurset.
   {{< card link="uge-5" title="5 + 6. AI-dreven Applikation" icon="document-text" subtitle="Blogpost: Bygning af en AI-dreven applikation med OpenAI API-kald via Java-backend." >}}
   {{< card link="uge-7" title="7. Spec-Driven Development" icon="document-text" subtitle="Blogpost: Hvad spec-driven development er, og hvordan specs og logs bruges sammen med kodeagenter." >}}
   {{< card link="uge-8" title="8. Kunde-case: E.G." icon="document-text" subtitle="Blogpost: Besøg hos E.G. og anbefalinger til systemer og AI-integration." >}}
-  {{< card link="uge-9" title="9. Projektoplæg: Trello-integration" icon="document-text" subtitle="Blogpost: Projektoplæg til automatisering af Trello-boards via REST API." >}}
+  {{< card link="uge-9" title="9. Projektoplæg: The Solution" icon="document-text" subtitle="Blogpost: Projektoplæg til automatisering af Trello-boards for E.G.'s bookingflow." >}}
 {{< /cards >}}
