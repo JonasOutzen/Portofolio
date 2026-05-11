@@ -1,5 +1,5 @@
 ---
-title: "5. AI-dreven Applikation"
+title: "5 + 6. AI-dreven Applikation"
 toc: true
 weight: 5
 date: 2025-04-27
